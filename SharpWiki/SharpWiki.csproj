@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.1;net5.0;net6.0;net7.0</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<PackageId>SharpWiki</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Nilay Vishwakarma</Authors>
+	</PropertyGroup>
+	
+	<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
+		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+		<PackageReference Include="System.Text.Json" Version="7.0.1" />
+		<PackageReference Include="System.Net.Http.Json" Version="7.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
+		<PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+		<PackageReference Include="System.Text.Json" Version="5.0.0" />
+		<PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageReference Include="System.Text.Json" Version="6.0.0" />
+		<PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net7.0' ">
+		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+		<PackageReference Include="System.Text.Json" Version="7.0.1" />
+		<PackageReference Include="System.Net.Http.Json" Version="7.0.0" />
+	</ItemGroup>
+
+</Project>
