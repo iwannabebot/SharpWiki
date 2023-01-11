@@ -1,6 +1,12 @@
-﻿# SharpWiki - A tiny C# client for Wikipedia
+# SharpWiki - A tiny C# client for Wikipedia
 
-## Supported APIs
+### Status
+
+![CI](https://github.com/iwannabebot/sharpwiki/actions/workflows/dotnet.yml/badge.svg)
+![CodeQL](https://github.com/iwannabebot/sharpwiki/actions/workflows/codeql.yml/badge.svg)
+
+
+### Supported APIs
 |Support|Resource|Operation|
 |-------|--------|----------|
 |✅|Search|Page|
