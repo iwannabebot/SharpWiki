@@ -6,6 +6,9 @@
 		<PackageId>SharpWiki</PackageId>
 		<Version>1.0.0</Version>
 		<Authors>Nilay Vishwakarma</Authors>
+		<PackageDescription>A tiny C# client for Wikipedia</PackageDescription>
+		<RepositoryUrl>https://github.com/iwannabebot/SharpWiki</RepositoryUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	</PropertyGroup>
 	
 	<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
