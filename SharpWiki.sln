@@ -7,10 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpWiki", "SharpWiki\Shar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{BB2A309C-6E60-489D-9719-7C4F05741370}"
 	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpWiki.Tests", "SharpWiki.Tests\SharpWiki.Tests.csproj", "{C1FCFC14-9DBC-4B66-A6A7-E30C9F3283ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpWiki.Tests", "SharpWiki.Tests\SharpWiki.Tests.csproj", "{C1FCFC14-9DBC-4B66-A6A7-E30C9F3283ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
