@@ -8,7 +8,6 @@
 		<Authors>Nilay Vishwakarma</Authors>
 		<PackageDescription>A tiny C# client for Wikipedia</PackageDescription>
 		<RepositoryUrl>https://github.com/iwannabebot/SharpWiki</RepositoryUrl>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<PackageTags>wiki,mediawiki,wikipedia</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
