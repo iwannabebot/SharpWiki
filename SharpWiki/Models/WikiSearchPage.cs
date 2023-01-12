@@ -24,20 +24,22 @@
 
         /// <summary>
         /// For search pages endpoint:
-        /// A few lines giving a sample of page content with search terms highlighted with<span class=\"searchmatch\"> tags
+        /// A few lines giving a sample of page content with search terms highlighted with span tags
         /// For autocomplete page title endpoint:
         /// Page title in reading-friendly format
         /// </summary>
         public string? Excerpt { get; set; }
 
         /// <summary>
-        /// The title of the page redirected from, if the search term originally matched a redirect page or null if search term did not match a redirect page.
+        /// The title of the page redirected from, if the search term originally matched a redirect page 
+        /// or null if search term did not match a redirect page.
         /// </summary>
         [JsonPropertyName("matched_title")]
         public string? MatchedTitle { get; set; }
 
         /// <summary>
-        /// Short summary of the page topic based on the corresponding entry on Wikidata or null if no entry exists
+        /// Short summary of the page topic based on the corresponding entry on Wikidata or null if no 
+        /// entry exists
         /// </summary>
         public string? Description { get; set; }
 

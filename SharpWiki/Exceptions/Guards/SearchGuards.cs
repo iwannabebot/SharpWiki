@@ -10,7 +10,7 @@
     /// <summary>
     /// Guards for Search API
     /// </summary>
-    public static class SearchGuards
+    internal static class SearchGuards
     {
         public static void SearchLimit(this Guard guard, int limit)
         {

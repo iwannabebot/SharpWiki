@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpWiki.Tests", "SharpWiki.Tests\SharpWiki.Tests.csproj", "{C1FCFC14-9DBC-4B66-A6A7-E30C9F3283ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpWiki.Benchmark", "SharpWiki.Benchmark\SharpWiki.Benchmark.csproj", "{ACB24257-E1DD-4657-A333-2CB134D95482}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C1FCFC14-9DBC-4B66-A6A7-E30C9F3283ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1FCFC14-9DBC-4B66-A6A7-E30C9F3283ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1FCFC14-9DBC-4B66-A6A7-E30C9F3283ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB24257-E1DD-4657-A333-2CB134D95482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB24257-E1DD-4657-A333-2CB134D95482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB24257-E1DD-4657-A333-2CB134D95482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB24257-E1DD-4657-A333-2CB134D95482}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

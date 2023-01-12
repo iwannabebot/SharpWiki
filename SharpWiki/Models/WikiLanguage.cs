@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace SharpWiki.Models
 {
+    /// <summary>
+    /// Wiki Language
+    /// </summary>
     public enum WikiLanguage
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         English = 1,
         Cebuano = 2,
         German = 3,
@@ -86,7 +90,7 @@ namespace SharpWiki.Models
         LowGerman = 76,
         Malayalam = 77,
         Kyrgyz = 78,
-        BelarusianTaraškievicaorthography = 79,
+        BelarusianTaraskievicaorthography = 79,
         Telugu = 80,
         Breton = 81,
         Swahili = 82,
@@ -115,7 +119,7 @@ namespace SharpWiki.Models
         Scots = 105,
         Punjabi = 106,
         Ido = 107,
-        Volapük = 108,
+        Volapuk = 108,
         Yoruba = 109,
         Nepali = 110,
         Gujarati = 111,
@@ -189,7 +193,7 @@ namespace SharpWiki.Models
         Erzya = 179,
         WestFlemish = 180,
         LowSaxon = 181,
-        Nāhuatl = 182,
+        Nahuatl = 182,
         Sardinian = 183,
         Veps = 184,
         Cornish = 185,
@@ -199,7 +203,7 @@ namespace SharpWiki.Models
         Corsican = 189,
         Gilaki = 190,
         Dagbani = 191,
-        võro = 192,
+        voro = 192,
         MoroccanArabic = 193,
         Tibetan = 194,
         Abkhazian = 195,
@@ -326,5 +330,6 @@ namespace SharpWiki.Models
         Kalaallisut = 316,
         Dzongkha = 317,
         Cree = 318
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

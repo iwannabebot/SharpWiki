@@ -16,6 +16,9 @@ namespace SharpWiki.Exceptions
         /// </summary>
         private Guard() { }
 
+        /// <summary>
+        /// Default Guard Object
+        /// </summary>
         public static Guard Against = new Guard();
     }
 }

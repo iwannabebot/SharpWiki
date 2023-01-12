@@ -11,6 +11,9 @@ namespace SharpWiki.Exceptions
     /// </summary>
     public class WikiFileNotFoundException : Exception
     {
+        /// <summary>
+        /// Initialize object
+        /// </summary>
         public WikiFileNotFoundException(): base("Title not found") { }
 
     }

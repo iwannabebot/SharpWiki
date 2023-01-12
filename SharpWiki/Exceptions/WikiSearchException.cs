@@ -2,13 +2,15 @@
 {
     using System;
 
+    /// <summary>
+    /// Base Wiki Search Exception
+    /// </summary>
     public class WikiSearchException : Exception
     {
-        public WikiSearchException() { }
-
+        /// <summary>
+        /// Initialize object
+        /// </summary>
+        /// <param name="message">Error Message</param>
         public WikiSearchException(string message) : base(message) { }
-
-        public WikiSearchException(string message, Exception ex) : base(message, ex) { }
-
     }
 }

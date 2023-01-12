@@ -11,7 +11,7 @@
     /// <summary>
     /// Guards for Page API
     /// </summary>
-    public static class PageGuards
+    internal static class PageGuards
     {
         public static void CreatePage(this Guard guard, WikiPageRequestCreate createPageRequest)
         {

@@ -2,6 +2,9 @@
 {
     using System.Text.Json.Serialization;
 
+    /// <summary>
+    /// Raw File
+    /// </summary>
     public class WikiFileRaw
     {
         /// <summary>
