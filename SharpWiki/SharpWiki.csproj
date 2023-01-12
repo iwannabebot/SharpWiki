@@ -4,7 +4,7 @@
 		<TargetFrameworks>netstandard2.1;net6.0;net7.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<PackageId>SharpWiki</PackageId>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<Authors>Nilay Vishwakarma</Authors>
 		<PackageDescription>A tiny C# client for Wikipedia</PackageDescription>
 		<RepositoryUrl>https://github.com/iwannabebot/SharpWiki</RepositoryUrl>
