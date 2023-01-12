@@ -4,7 +4,7 @@
 
 ![CI](https://github.com/iwannabebot/sharpwiki/actions/workflows/dotnet.yml/badge.svg)
 ![CodeQL](https://github.com/iwannabebot/sharpwiki/actions/workflows/codeql.yml/badge.svg)
-![Nuget](https://github.com/iwannabebot/sharpwiki/actions/workflows/publish.yml/badge.svg)
+![Nuget](https://github.com/iwannabebot/sharpwiki/actions/workflows/nuget.yml/badge.svg)
 
 
 ### Supported APIs
