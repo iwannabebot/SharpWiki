@@ -2,6 +2,8 @@
 
 #### Install from Nuget
 
+![Nuget](https://img.shields.io/nuget/v/SharpWiki?label=SharpWiki&logo=nuget)
+
 ```pwsh
 Install-Package SharpWiki
 ```
@@ -11,7 +13,6 @@ Install-Package SharpWiki
 ![CI](https://github.com/iwannabebot/sharpwiki/actions/workflows/dotnet.yml/badge.svg)
 ![CodeQL](https://github.com/iwannabebot/sharpwiki/actions/workflows/codeql.yml/badge.svg)
 ![Nuget](https://github.com/iwannabebot/sharpwiki/actions/workflows/nuget.yml/badge.svg)
-
 
 ### Supported APIs
 |Support|Resource|Operation|
