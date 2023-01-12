@@ -1,5 +1,7 @@
 # SharpWiki - A tiny C# client for Wikipedia
 
+![SharpWiki](https://repository-images.githubusercontent.com/587771667/ae99da4e-ef94-4c66-a9a9-b7d66956e27e)
+
 #### Install from Nuget
 
 [![NuGet version (SharpWiki)](https://img.shields.io/nuget/v/SharpWiki?label=SharpWiki&logo=nuget)](https://www.nuget.org/packages/SharpWiki/)
