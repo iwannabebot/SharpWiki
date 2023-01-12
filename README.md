@@ -2,7 +2,8 @@
 
 #### Install from Nuget
 
-![Nuget](https://img.shields.io/nuget/v/SharpWiki?label=SharpWiki&logo=nuget)
+[![NuGet version (SharpWiki)](https://img.shields.io/nuget/v/SharpWiki?label=SharpWiki&logo=nuget)](https://www.nuget.org/packages/SharpWiki/)
+
 
 ```pwsh
 Install-Package SharpWiki
