@@ -1,6 +1,19 @@
-# SharpWiki - A tiny C# client for Wikipedia
+<div align="center">
+
+![SharpWiki](https://repository-images.githubusercontent.com/587771667/ae99da4e-ef94-4c66-a9a9-b7d66956e27e)
+# SharpWiki
+A tiny C# api client for Wikipedia
+
+![CI](https://github.com/iwannabebot/sharpwiki/actions/workflows/dotnet.yml/badge.svg)
+![CodeQL](https://github.com/iwannabebot/sharpwiki/actions/workflows/codeql.yml/badge.svg)
+![Nuget](https://github.com/iwannabebot/sharpwiki/actions/workflows/nuget.yml/badge.svg)
+</div>
+
 
 #### Install from Nuget
+
+[![NuGet version (SharpWiki)](https://img.shields.io/nuget/v/SharpWiki?label=SharpWiki&logo=nuget)](https://www.nuget.org/packages/SharpWiki/)
+
 
 ```pwsh
 Install-Package SharpWiki
@@ -8,9 +21,6 @@ Install-Package SharpWiki
 
 ### Status
 
-![CI](https://github.com/iwannabebot/sharpwiki/actions/workflows/dotnet.yml/badge.svg)
-![CodeQL](https://github.com/iwannabebot/sharpwiki/actions/workflows/codeql.yml/badge.svg)
-![Nuget](https://github.com/iwannabebot/sharpwiki/actions/workflows/nuget.yml/badge.svg)
 
 
 ### Supported APIs
@@ -34,19 +44,11 @@ Install-Package SharpWiki
 
 #### Quick Start
 
+This client will use English wikipedia's API. To change settings use `SharpWikiClientOptions` and pass the parameter in `SharpWikiClient`
+
 ```cs
 // Initialize SharpWikiClient
-SharpWikiClient client= new SharpWikiClient(new SharpWikiClientOptions
-{
-    ApiUserAgent = "SharpWiki.Tests", // Write name of you app
-    Language = WikiLanguage.English, // Choose wikipedia language
-    GetToken = () =>
-    {
-        // Get Mediawiki token (required to create or update page only)
-        // For more details, refer: https://www.mediawiki.org/wiki/Extension:OAuth
-        return "";
-    }
-});
+using SharpWikiClient client= new SharpWikiClient();
 
 // Search page
 // This will search entire wikipedia page
@@ -68,7 +70,10 @@ foreach (WikiSearchPage page in searchTitles.Pages)
     Console.WriteLine($"{page.Id}");
     Console.WriteLine($"{page.Title}");
 }
+```
 
+##### Get Page
+```cs
 // Get a wiki page by title
 WikiPage page= await client.GetPageAsync("Jupiter");
 Console.WriteLine($"{page.Id}");
@@ -91,7 +96,10 @@ Console.WriteLine($"{offlinePage.Source}");
 // Get a wiki page by title as HTML
 string wikiPageHtml = await client.GetPageHtmlAsync("Jupiter");
 Console.WriteLine($"{wikiPageHtml}");
+```
 
+##### Get Page in all languages
+```cs
 // Get list of languages in which this title is also present
 IEnumerable<WikiPageLanguage> pageLanguages = await client.GetPageLanguagesAsync("Jupiter");
 foreach(WikiPageLanguage pageLanguage in pageLanguages)
@@ -101,7 +109,10 @@ foreach(WikiPageLanguage pageLanguage in pageLanguages)
     Console.WriteLine($"{pageLanguage.Title}");
     Console.WriteLine($"{pageLanguage.Key}");
 }
+```
 
+##### Get Files on Page
+```cs
 // Get list of files present on a wiki page
 IEnumerable<WikiFile> filesOnPage = await client.GetFilesOnPageAsync("Jupiter");
 foreach (WikiFile fileOnPage in filesOnPage)
@@ -110,6 +121,10 @@ foreach (WikiFile fileOnPage in filesOnPage)
     Console.WriteLine($"{fileOnPage.Original.Url}");
 }
 
+```
+
+##### Create a Page
+```cs
 // Create a wiki page
 WikiPageRequestCreate createWikiModel = new WikiPageRequestCreate
 {
@@ -123,6 +138,10 @@ WikiPageRequestCreate createWikiModel = new WikiPageRequestCreate
 
 WikiPage createdPage = await client.CreatePageAsync(createWikiModel);
 
+```
+
+##### Update a Page
+```cs
 // Update a wiki page
 WikiPageRequestUpdate updateWikiModel = new WikiPageRequestUpdate
 {
@@ -139,6 +158,34 @@ WikiPageRequestUpdate updateWikiModel = new WikiPageRequestUpdate
 
 WikiPage updatedPage = await client.UpdatePageAsync("My Wiki Page", updateWikiModel);
 
+```
+
+##### Get File
+```cs
 // Get a file by name
 WikiFile file = await client.GetFileAsync("filename");
+```
+
+##### Want to use IHttpClientFactory?
+```cs
+SharpWikiClient client= new SharpWikiClient(clientOptions, httpClientFactory);
+```
+
+##### Want to use other languages?
+
+You can set `Language` in `SharpWikiClientOptions` and pass into SharpWikiClient to change a language
+
+```cs
+var clientOptions = new SharpWikiClientOptions
+{
+    ApiUserAgent = "SharpWiki.Tests", // Write name of you app
+    Language = WikiLanguage.Spanish, // Choose wikipedia language
+    GetToken = () =>
+    {
+        // Get Mediawiki token (required to create or update page only)
+        // For more details, refer: https://www.mediawiki.org/wiki/Extension:OAuth
+        return "";
+    }
+};
+SharpWikiClient client= new SharpWikiClient(clientOptions);
 ```
