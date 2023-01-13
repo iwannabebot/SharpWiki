@@ -1,4 +1,4 @@
-# SharpWiki - A tiny C# client for Wikipedia
+# SharpWiki - A tiny C# api client for Wikipedia
 
 ![SharpWiki](https://repository-images.githubusercontent.com/587771667/ae99da4e-ef94-4c66-a9a9-b7d66956e27e)
 
