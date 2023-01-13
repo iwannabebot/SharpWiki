@@ -1,6 +1,14 @@
-# SharpWiki - A tiny C# api client for Wikipedia
+<div align="center">
 
 ![SharpWiki](https://repository-images.githubusercontent.com/587771667/ae99da4e-ef94-4c66-a9a9-b7d66956e27e)
+# SharpWiki
+A tiny C# api client for Wikipedia
+
+![CI](https://github.com/iwannabebot/sharpwiki/actions/workflows/dotnet.yml/badge.svg)
+![CodeQL](https://github.com/iwannabebot/sharpwiki/actions/workflows/codeql.yml/badge.svg)
+![Nuget](https://github.com/iwannabebot/sharpwiki/actions/workflows/nuget.yml/badge.svg)
+</div>
+
 
 #### Install from Nuget
 
@@ -13,9 +21,7 @@ Install-Package SharpWiki
 
 ### Status
 
-![CI](https://github.com/iwannabebot/sharpwiki/actions/workflows/dotnet.yml/badge.svg)
-![CodeQL](https://github.com/iwannabebot/sharpwiki/actions/workflows/codeql.yml/badge.svg)
-![Nuget](https://github.com/iwannabebot/sharpwiki/actions/workflows/nuget.yml/badge.svg)
+
 
 ### Supported APIs
 |Support|Resource|Operation|
