@@ -32,7 +32,7 @@
         /// <summary>
         /// Length of the video, audio, or multimedia file or null for other media types
         /// </summary>
-        public int? Duration { get; set; }
+        public decimal? Duration { get; set; }
 
         /// <summary>
         /// URL to download the file
