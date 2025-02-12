@@ -524,7 +524,12 @@
         {
             var response = await _httpClient.GetAsync($"{GetEndpoint()}/page/{title}/links/media");
             Guard.Against.GetPageFilesErrors(response);
-            return await response.Content.ReadFromJsonAsync<IEnumerable<WikiFile>>();
+            var str = await response.Content.ReadAsStringAsync();
+            var serializedJson = await response.Content.ReadFromJsonAsync<Dictionary<string, IEnumerable<WikiFile>>>();
+            if (serializedJson != default && serializedJson.ContainsKey("files"))
+                return serializedJson["files"];
+            else
+                return new WikiFile[] { };
         }
 
         /// <summary>
